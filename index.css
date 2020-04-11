@@ -23,29 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 
 section {
     height: 100vh;
@@ -71,7 +49,7 @@ section {
 }
 
 .intro {
-    color: rgb(228, 187, 112);
+    color: white;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -83,6 +61,10 @@ section {
 
 .intro h1 {
     font-size: 50px;
+}
+
+.intro h1:hover {
+    color: black;
 }
 
 .intro button, 
@@ -104,6 +86,7 @@ section {
     transform: translate(-50%,-50%);
     font-size: 40px;
     color: white;
+    transition: opacity 0.5s ease 0.5s;
 }
 
 .winner-class {

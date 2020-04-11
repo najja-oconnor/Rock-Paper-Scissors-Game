@@ -7,14 +7,20 @@ const game = () => {
        const introScreen = document.querySelector('.intro')
        const match = document.querySelector('.match')
 
-       playBtn.addEventListener('click', () => {
+       playBtn.addEventListener("click", () => {
            introScreen.classList.add('fadeOut')
+           match.classList.add('fadeIn')
        })
    }
+   //Play match
+   const playMatch = () => {
+       const options = document.querySelectorAll('.options button')
+   }
 
-   //make sure to call all inner functions
-   startGame()
+
+   //call all inner functions
+   startGame();
 }
 
 //call game function - start the game
-game()
+game();
