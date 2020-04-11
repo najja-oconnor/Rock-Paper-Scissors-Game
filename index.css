@@ -93,6 +93,7 @@ section {
     color: rgb(228, 187, 112);
     font-size: 20px;
     background: rgb(69, 104, 74);
+    cursor: pointer;
 }
 
 .match {
@@ -126,3 +127,13 @@ section {
 }
 
 /**Javascript components**/
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
