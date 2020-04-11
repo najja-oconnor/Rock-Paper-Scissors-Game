@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+section {
+    height: 100vh;
+    background-color: rgb(228, 187, 112);
+}
