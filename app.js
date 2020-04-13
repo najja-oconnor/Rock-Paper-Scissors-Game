@@ -1,25 +1,28 @@
 const game = () => {
-   let pScore = 0;
-   let cScore = 0;
+    let pScore = 0;
+    let cScore = 0;
 
-   const startGame = () => {
-       const playBtn = document.querySelector('.intro button')
-       const introScreen = document.querySelector('.intro')
-       const match = document.querySelector('.match')
+    const startGame = () => {
+        const playBtn = document.querySelector('.intro button')
+        const introScreen = document.querySelector('.intro')
+        const match = document.querySelector('.match')
 
-       playBtn.addEventListener("click", () => {
-           introScreen.classList.add('fadeOut')
-           match.classList.add('fadeIn')
-       })
-   }
-   //Play match
-   const playMatch = () => {
-       const options = document.querySelectorAll('.options button')
-   }
+        playBtn.addEventListener("click", () => {
+            introScreen.classList.add('.fadeOut')
+            match.classList.add('.fadeIn')
+        })
+    }
+    //Play match
+    const playMatch = () => {
+        const options = document.querySelectorAll('.options button')
+        const playerHand = document.querySelector('player-hand')
+        const computerHand = document.querySelector('computer-hand')
+
+    }
 
 
-   //call all inner functions
-   startGame();
+    //call all inner functions
+    startGame();
 }
 
 //call game function - start the game
